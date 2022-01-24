@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Каталог</title>
-  </head>
-  <body>
-    <header class="page-header">
-        <a href="#">
-          <img src="#"  alt="Логотип Седона">
-        </a>
-        <nav class="navigation">
-        <ul class="navigatolr-list">
-          <li class="navigation-item">
-         <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
-          </li>
-          <li class="navigation-item">
+
+<head>
+  <meta charset="utf-8">
+  <title>Каталог</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a href="#">
+      <img src="#" alt="Логотип Седона">
+    </a>
+    <nav class="navigation">
+      <ul class="navigatolr-list">
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О Седоне</a>
+        </li>
+        <li class="navigation-item">
           <a class="navigation-link" href="#">Гостиницы</a>
         </li>
-        </ul>
-        <ul class="navigatolr-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Поиск
-              </span>
-            </a>
+      </ul>
+      <ul class="navigatolr-user">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">
+              Поиск
+            </span>
+          </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
@@ -39,9 +41,63 @@
         <li class="navigation-item">
           <a class="navigation-link" href="#">Хочу сюда</a>
         </li>
-        </ul>
-        </nav>
-          </header>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-inner">
+    <h1>Гостиницы Седоны</h1>
+    <section>
+      <h2 class="visually-hidden">Список услуг с фильтрами</h2>
+      <p>Гостиницы</p>
+      <form action="">
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Инфраструктура:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Бассейн" checked>
+                Бассейн
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Парковка" checked>
+                Парковка
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Wi-Fi">
+                Wi-Fi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Тип жилья:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="hotels" checked>
+                Гостиница
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="motel">
+                Мотель
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="apartments">
+                Апартаменты
+        </fieldset>
+      </form>
+    </section>
+    <p><b>Найдено гостиниц: 38</b></p>
+  </main>
 
-  </body>
+</body>
+
 </html>
