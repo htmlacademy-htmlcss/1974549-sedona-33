@@ -31,14 +31,12 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: inherit;
-  font-style: normal;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
 }
 
 .navigation-link-item {
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -47,14 +45,7 @@ body {
   text-decoration: none;
 }
 
-.visually-hidden {
-  background-image: url("images/text-greeting.svg");
-  background-image: url("images/background-1.jpg");
-  background-image: url("images/divider.svg");
-}
-
 .location-title {
-  font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
@@ -73,7 +64,6 @@ body {
 
 
 .advantages-title {
-  font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
@@ -81,16 +71,28 @@ body {
   color: #000000
 }
 
+.advantages-title-item {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF
+}
+
+.advantages-description-item {
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
 .advantages-description {
-  font-weight: normal;
-  font-style: normal;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 
 .search-title {
-  font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
@@ -99,16 +101,13 @@ body {
 }
 
 .date-trip {
-  font-style: normal;
-  font-weight: normal;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333
 }
 
-.search-services {
-  font-style: normal;
+.search-link {
   font-weight: bold;
   font-size: 20px;
   line-height: 36px;
@@ -118,18 +117,15 @@ body {
 }
 
 .subscribe-item {
-  font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  background-image: url("images/background-4.jpg");
+  background-image: url("../images/background-4");
 }
 
 .information-item {
-  font-style: normal;
-  font-weight: normal;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -139,7 +135,6 @@ body {
   font-size: 14px;
   font-weight: 400;
   background-color: bisque/wheat;
-  background-image: url("images/logo-htmlacademy.svg");
   background-repeat: repeat;
 }
 
@@ -148,8 +143,6 @@ body {
 }
 
 .footer-contacts-address-phone {
-  font-style: normal;
-  font-weight: normal;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -158,7 +151,6 @@ body {
 }
 
 .button-newsletter-button {
-  font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
@@ -170,8 +162,6 @@ body {
 }
 
 .field {
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 26px;
   display: flex;
