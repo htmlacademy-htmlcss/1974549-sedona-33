@@ -43,6 +43,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  color: #FFFFFF;
+  background-color: #756257;
 }
 
 .location-title {
@@ -62,9 +64,24 @@ body {
   text-align: center;
 }
 
+/* .bg {
+  width: 1200px;
+  height: 485px;
+  background-image: url("../images/arizona-state.jpg");
+  background-repeat: no-repeat;
+}
+
+.br {
+  Width: 1200px;
+  Height: 57px;
+  background-image: url("../images/divider.svg");
+  background-color: #7DB54F;
+} */
+
 .advantages {
   text-align: center;
 }
+
 
 .advantages-title {
   font-weight: bold;
@@ -94,12 +111,8 @@ body {
   background-color: #83B3D3;
 }
 
-.advantages li:nth-child(2),
-.advantages li:nth-child(4),
-.advantages li:nth-child(6),
-.advantages li:nth-child(8) {
+.advantages li:nth-child(2n) {
   background-color: rgba(131, 179, 211, 0.12);
-  ;
 }
 
 .advantages li:nth-child(3) {
@@ -140,7 +153,15 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  background-color: #756257;
+  color: #ffffff;
 }
+
+/* .newsletter-form {
+  background-image: url("../images/boke-canyon.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+} */
 
 .subscribe-item {
   font-weight: bold;
@@ -148,13 +169,14 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  background-image: url("../images/background-4");
+  color: #FFFFFF;
 }
 
 .information-item {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  color: #FFFFFF;
 }
 
 .page-footer {
@@ -174,6 +196,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  text-decoration: none;
 }
 
 .button-newsletter-button {
@@ -185,6 +208,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffff;
+  background-color: #83B3D3;
 }
 
 .field {
@@ -193,4 +217,97 @@ body {
   display: flex;
   align-items: center;
   color: #000000;
+}
+
+.screen-motels-link {
+  text-decoration: none;
+}
+
+.screen-motels-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+
+
+.screen-motels-price {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.product-list span {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+  background-color: #F2F2F2;
+}
+
+.product-card-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #83B3D3;
+}
+
+.product-selected-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #7DB54F;
+}
+
+.screen-motels-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #756257;
+  ;
+}
+
+
+
+.pagination-download-more {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #83B3D3;
+  border-radius: 4px;
+}
+
+.pagination-link {
+  color: #ffffff;
+  background-color: #83B3D3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
 }
