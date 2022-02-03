@@ -37,7 +37,7 @@ body {
 }
 
 .navigation-link-item {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -48,7 +48,7 @@ body {
 }
 
 .location-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -84,7 +84,7 @@ body {
 
 
 .advantages-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -92,7 +92,7 @@ body {
 }
 
 .advantages-title-item {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -105,34 +105,30 @@ body {
   color: #FFFFFF;
 }
 
-
-.advantages li:nth-child(1),
-.advantages li:nth-child(5) {
-  background-color: #83B3D3;
-}
-
-.advantages li:nth-child(2n) {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantages li:nth-child(3) {
-  background-color: #FFFFFF;
-}
-
-.advantages li:nth-child(7) {
-  background-color: rgba(131, 179, 211, 0.2);
-  ;
-}
-
-
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 
+.attractions-item {
+  background-color: #83B3D3;
+}
+
+.service-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item {
+  background-color: #FFFFFF;
+}
+
+.advantages-point-item {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
 .search-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -147,7 +143,7 @@ body {
 }
 
 .search-link {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
@@ -164,7 +160,7 @@ body {
 } */
 
 .subscribe-item {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -200,7 +196,7 @@ body {
 }
 
 .button-newsletter-button {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   display: flex;
@@ -224,7 +220,7 @@ body {
 }
 
 .screen-motels-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 31px;
   color: #000000;
@@ -247,7 +243,7 @@ body {
 }
 
 .product-card-button {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   text-align: center;
@@ -258,7 +254,7 @@ body {
 }
 
 .product-selected-button {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   text-align: center;
@@ -269,7 +265,7 @@ body {
 }
 
 .screen-motels-button {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   text-align: center;
@@ -283,7 +279,7 @@ body {
 
 
 .pagination-download-more {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   display: flex;
@@ -299,7 +295,7 @@ body {
   color: #ffffff;
   background-color: #83B3D3;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   align-items: center;
