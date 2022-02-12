@@ -63,7 +63,7 @@ body {
 
 .navigation-logo {
   width: 140px;
-  margin-right: 30px;
+  position: absolute;
 }
 
 .navigation-list {
@@ -74,9 +74,10 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin-left: 169px;
 }
 
-.navigatolr-user {
+.navigation-user {
   max-width: 310px;
   margin-left: auto;
   padding: 0;
@@ -86,7 +87,7 @@ body {
   justify-content: flex-end;
 }
 
-.navigatolr-user .navigatolr-list {
+.navigation-user .navigation-list {
   min-width: 42px;
   min-height: 66px;
 }
@@ -105,6 +106,7 @@ body {
 
 .navigation-link-item {
   font-weight: 700;
+  height: 37px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -114,16 +116,54 @@ body {
   background-color: #756257;
   display: block;
   width: 160px;
+  border-radius: 4px;
+  padding: 9px 15px 8px;
+}
+
+.catalog-wrapper {
+  display: flex;
+}
+
+.catalog-filter-group {
+  border: none;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
 }
 
 .catalog-filter {
-  display: flex;
+  height: 408px;
   margin-left: 72px;
+  background-image: url("../images/boke-catalog-canyon.jpg");
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.sorting-type-select {
+  display: flex;
+  width: 1200px;
+  padding-top: 44px;
+  padding-bottom: 53px;
 }
 
 .sorting-type {
-  display: flex;
-  width: 1200px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.select-control {
+  width: 160px;
+  width: 160px;
+  padding: 13px 17px;
+  border-radius: 4px;
+  margin-left: 51px;
+  font-size: 16px;
+  border: 2px solid #E6E6E6;
 }
 
 .sorting-number {
@@ -137,7 +177,7 @@ body {
 }
 
 .sorting-butten {
-  width: 155px;
+  width: 220px;
 }
 
 .mode-tile {
@@ -152,8 +192,11 @@ body {
   width: 48px;
 }
 
-.select-control {
+.select-sorting {
   width: 280px;
+  line-height: 74px;
+  color: #333333;
+  padding: 12px 19px;
   margin-right: 81px;
 }
 
@@ -165,22 +208,25 @@ body {
 .logo-sedona {
   display: block;
   margin: 0 auto;
-  padding: 51px 37px 25px;
 }
 
 .heading {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  color: red;
-  margin-left: 71px;
+  color: #ffffff;
+  margin: 0;
+  padding-left: 71px;
+  padding-top: 35px;
 }
 
 .lead {
   font-size: 16px;
   line-height: 21px;
-  color: red;
+  color: #ffffff;
+  margin: 0;
   margin-left: 111px;
+  padding-bottom: 45px;
 }
 
 .location-title {
@@ -189,10 +235,9 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   width: 700px;
-  margin-bottom: 31px;
+  margin: 0 auto;
+  padding-bottom: 31px;
 }
 
 .number-advantages {
@@ -204,9 +249,8 @@ body {
   text-align: center;
   width: 720px;
   height: 36px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 80px;
+  margin: 0 auto;
+  padding-bottom: 80px;
 }
 
 
@@ -216,6 +260,7 @@ body {
   height: 485px;
   background-image: url("../images/arizona-state.jpg");
   background-repeat: no-repeat;
+  padding: 51px 37px 25px;
 }
 
 .br {
@@ -290,11 +335,10 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  margin-left: auto;
-  margin-right: auto;
   width: 700px;
-  margin-top: 91px;
-  margin-bottom: 29px;
+  margin: 0 auto;
+  padding-top: 91px;
+  padding-bottom: 29px;
 }
 
 .date-trip {
@@ -305,7 +349,8 @@ body {
   width: 720px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 56px;
+  margin: 0 auto;
+  padding-bottom: 56px;
 }
 
 .search-link {
@@ -320,14 +365,13 @@ body {
   width: 575px;
   height: 60px;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   margin-bottom: 93px;
   justify-content: center;
   align-items: center;
   border: 1px solid #000000;
   box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   border-radius: 10px;
 }
 
@@ -341,6 +385,24 @@ body {
   flex-direction: column;
 }
 
+.newsletter-item {
+  background-size: 100% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subscribe {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 auto;
+  padding-bottom: 46px;
+}
+
 .subscribe-item {
   font-weight: 700;
   font-size: 30px;
@@ -348,8 +410,31 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-top: 94px;
-  margin-bottom: 29px;
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 29px;
+}
+
+.information {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  width: 545px;
+  color: #333333;
+  margin: 0 auto;
+  padding-bottom: 46px;
+}
+
+.field-item {
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  color: #000000;
+  width: 600px;
+  padding-left: 22px;
+  border: none;
+  background: #F2F2F2;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .information-item {
@@ -358,20 +443,20 @@ body {
   text-align: center;
   color: #FFFFFF;
   margin: 0;
-  margin-bottom: 46px;
+  padding-bottom: 46px;
 }
 
 .submit-item {
   justify-content: center;
   display: flex;
-  padding: 0px 200px;
-  height: 60px;
+  margin: 0 auto;
 }
 
-.page-footer-container {
+.submit-wrapper {
+  justify-content: center;
   display: flex;
-  width: 1200px;
   margin: 0 auto;
+  padding-bottom: 160px;
 }
 
 .footer-social {
@@ -380,6 +465,8 @@ body {
   display: flex;
   align-items: center;
   margin-left: 72px;
+  padding-top: 49px;
+  padding-bottom: 53px;
 }
 
 .footer-social-list {
@@ -403,20 +490,14 @@ body {
 }
 
 .page-footer {
-  font-size: 14px;
-  font-weight: 400;
-  background-color: bisque/wheat;
-  background-repeat: repeat;
-}
-
-.page-footer a {
-  color: #000000;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-contacts {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .footer-contacts-address-phone {
@@ -431,13 +512,16 @@ body {
   width: 720px;
   margin: 0;
   padding: 0;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .logo-htmlacademy {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 44px 0px 44px 53px;
+  padding: 44px 0px 44px;
+  margin-left: 53px;
 }
 
 .button-newsletter-button {
@@ -450,9 +534,11 @@ body {
   color: #ffff;
   background-color: #83B3D3;
   width: 200px;
-  height: 61px;
+  height: 60px;
   display: flex;
   justify-content: center;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
 }
 
 .field {
@@ -461,8 +547,9 @@ body {
   align-items: center;
   color: #000000;
   width: 600px;
-  height: 60px;
   padding-left: 22px;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .screen-motels-link {
@@ -489,6 +576,9 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #333333;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .aside {
@@ -534,10 +624,11 @@ body {
 
 
 
-.pagination-download-more {
+.button-pagination-download-more {
   font-weight: 700;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 60px;
+  width: 620px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -545,6 +636,36 @@ body {
   color: #FFFFFF;
   background: #83B3D3;
   border-radius: 4px;
+  margin: auto;
+  justify-content: center;
+  padding: 0;
+  border: none;
+}
+
+.download-more-wrapper {
+  display: flex;
+  border: 1px solid #E6E6E6;
+  border-left: none;
+  border-right: none;
+  width: 1056px;
+  margin: 0 auto;
+  padding: 30px 0 30px 0;
+}
+
+.pagination-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 72px;
+  padding-bottom: 73px;
+  padding-top: 30px;
+}
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .pagination-link {
@@ -557,6 +678,16 @@ body {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  display: flex;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-current {
