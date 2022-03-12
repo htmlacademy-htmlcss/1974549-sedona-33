@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" type="images/png" sizes="32x32" href="images/favicon.png">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -21,7 +22,7 @@
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Гостиницы</a>
+          <a class="navigation-link" href="index.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-user navigation-list ">
@@ -165,10 +166,8 @@
         <form class="newsletter-form" action="#" method="post">
           <h2 class="subscribe-item">Подпишитесь на рассылку</h2>
           <p class="information-item">Только полезная информация и&nbsp;никакого спама,<br> честное бойскаутское!</p>
-          <!-- <label for="newsletter-email"></label>  -->
           <div class="submit-item">
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-              required>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email">
             <button class="button-newsletter-button" type="submit">Подписаться</button>
           </div>
         </form>
@@ -220,6 +219,98 @@
       </svg>
     </a>
   </footer>
+  <div class="modal-container">
+    <div class="modal modal-auth">
+      <button class="modal-close-button">
+        <svg class="close-button" width="13" height="13" focusable="false" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13">
+          <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
+        </svg>
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в&nbsp;Седоне</h2>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru/courses" method="post">
+          <div class="wrapper-model-field">
+            <label class="form-label" for="appointment-date">Дата заезда:</label>
+            <input class="model-field" type="text" id="appointment-date" name="appointment-date"
+              placeholder="27 апреля 2020">
+            <svg class="svg-data" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 15 15">
+              <g opacity=".3" fill="#000">
+                <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" />
+                <path
+                  d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" />
+                <path
+                  d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+              </g>
+            </svg>
+            <p class="text-model-error">Мы&nbsp;не&nbsp;можем отправить вас в&nbsp;прошлое.</p>
+          </div>
+          <div class="wrapper-model-field">
+            <label class="form-label" for="check-date">Дата выезда:</label>
+            <input class="model-field" type="text" id="check-date" name="check-date" placeholder="1 сентября 2021">
+            <svg class="svg-data" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 15 15">
+              <g opacity=".3" fill="#000">
+                <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" />
+                <path
+                  d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" />
+                <path
+                  d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+              </g>
+            </svg>
+            <p class="text-model">На&nbsp;эти даты есть свободные номера. Пока есть.</p>
+          </div>
+          <div class="wrap-model-field">
+            <label class="field-adult" for="adult">Взрослые:</label>
+            <div class="input-svg">
+              <input class="text-field" type="text" id="adult" name="adult" placeholder="2">
+              <button class="field-minus" type="button">
+                <svg class="svg-minus" width="13" height="1" viewBox="0 0 13 1" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" />
+                </svg>
+              </button>
+              <button class="field-plus" type="button">
+                <svg class="svg-plus" width="13" height="13" viewBox="0 0 13 13" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                </svg>
+              </button>
+            </div>
+            <label class="field-child" for="children">Дети:</label>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                <svg class="tooltip-icon" width="25" height="25" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 25 25">
+                  <circle cx="12.5" cy="12.5" r="12.5" /></svg>
+              </button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут
+                с&nbsp;вами, возраст которых
+                от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются бесплатно.</span>
+            </span>
+            <div class="input-svg">
+              <input class="text-field" type="text" id="children" name="children" placeholder="1">
+              <button class="field-minus" type="button">
+                <svg class="svg-minus" width="14" height="1" viewBox="0 0 14 1" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" />
+                </svg>
+              </button>
+              <button class="field-plus" type="button">
+                <svg class="svg-plus" width="13" height="13" viewBox="0 0 13 13" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button class="button-model" type="button">Найти</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 
 </html>
