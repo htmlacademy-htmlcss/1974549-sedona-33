@@ -1260,8 +1260,6 @@ img {
 }
 
 .product-image {
-  object-fit: contain;
-  max-width: 100%;
   display: block;
 }
 
