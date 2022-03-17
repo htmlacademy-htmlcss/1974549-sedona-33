@@ -62,8 +62,8 @@
         <h1 class="heading">Гостиницы Седоны</h1>
         <div class="breadcrumbs">
           <p class="lead">Гостиницы</p>
-          <a href="#" class="breadcrumbs-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+          <a href="#" class="breadcrumbs-item">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6 0.300049L0 5.80005V12H12V5.80005L6 0.300049ZM11 11H1V6.20005L6 1.70005L11 6.20005V11Z"
                 fill="white" />
               <path d="M4 10H5V7.5H7V10H8V6.5H4V10Z" fill="white" />
@@ -128,11 +128,11 @@
             <div class="range">
               <div class="price-range">
                 <label class="price-range-start">
-                  <input class="price" type="number" value="0" name="min-price">
+                  <input class="price prise--start" type="number" value="0" name="min-price">
                   <span class="start">от</span>
                 </label>
-                <label class="price-range-end"><input class="price price--end" type="number" value="9000"
-                    name="max-price">
+                <label class="price-range-end">
+                  <input class="price price--end" type="number" value="9000" name="max-price">
                   <span class="end">до</span>
                 </label>
               </div>
@@ -186,9 +186,11 @@
       <section>
         <ul class="product-list">
           <li class="screen-motels">
+            <a class="img-link" href="#">
+              <img class="product-image" width="300" height="206" src="images/hotel-amara.jpg"
+                alt="Отель Amara Resort & Spa">
+            </a>
             <a class="screen-motels-link" href="#">
-              <img width="300" height="206" src="images/hotel-amara.jpg"
-                alt="Отель Amara Resort">
               <h3 class="screen-motels-title">Amara Resort & Spa</h3>
             </a>
             <b class="screen-motels-price">Гостиница
@@ -204,9 +206,11 @@
             <span class="aside">Рейтинг: 8,5</span>
           </li>
           <li class="screen-motels">
-            <a class="screen-motels-link" href="#">
-              <img width="300" height="206" src="images/hotel-desert.jpg"
+            <a class="img-link" href="#">
+              <img class="product-image" width="300" height="206" src="images/hotel-desert.jpg"
                 alt="Отель Desert Quail Inn">
+            </a>
+            <a class="screen-motels-link" href="#">
               <h3 class="screen-motels-title">Desert Quail Inn</h3>
             </a>
             <b class="screen-motels-price">Гостиница
@@ -222,9 +226,11 @@
             <span class="aside">Рейтинг: 8,9</span>
           </li>
           <li class="screen-motels">
-            <a class="screen-motels-link" href="#">
-              <img width="300" height="206" src="images/hotel-villas.jpg"
+            <a class="img-link" href="#">
+              <img class="product-image" width="300" height="206" src="images/hotel-villas.jpg"
                 alt="Отель Villas at Poco Diablo">
+            </a>
+            <a class="screen-motels-link" href="#">
               <h3 class="screen-motels-title">Villas at Poco Diablo</h3>
             </a>
             <b class="screen-motels-price">Гостиница
@@ -240,9 +246,11 @@
             <span class="aside">Рейтинг: 9,2</span>
           </li>
           <li class="screen-motels">
-            <a class="screen-motels-link" href="#">
-              <img width="300" height="206" src="images/hotel-green.jpg"
+            <a class="img-link" href="#">
+              <img class="product-image" width="300" height="206" src="images/hotel-green.jpg"
                 alt="Отель GreenTree Inn">
+            </a>
+            <a class="screen-motels-link" href="#">
               <h3 class="screen-motels-title">GreenTree Inn</h3>
             </a>
             <b class="screen-motels-price">Гостиница
@@ -250,7 +258,7 @@
             </b>
             <div class="product-buttons">
               <button class="screen-motels-button">Подробнее</button>
-                <button class="product-card-button">В избранное</button>
+              <button class="product-card-button">В избранное</button>
             </div>
             <div class="two-stars">
               <span class="visually-hidden">Две звезды</span>
@@ -340,9 +348,7 @@
         </li>
       </ul>
     </section>
-    <section class="footer-contacts">
-      <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    </section>
+    <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     <a class="logo-htmlacademy" href=" https://htmlacademy.ru/">
       <svg width="115" height="34" viewBox="0 0 115 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path
