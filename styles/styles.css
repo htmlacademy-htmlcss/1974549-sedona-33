@@ -45,21 +45,26 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #E5E5E5;
+  align-items: center;
 }
 
 img {
-  max-width: 100%;
+  min-width: 100%;
   object-fit: contain;
 }
 
 .main-container {
   flex-grow: 1;
+  background: #ffffff;
+  box-shadow: 0 20px 15px 0 rgb(0 0 0 / 20%);
 }
 
 .page-header {
   color: #000000;
   background-color: #ffffff;
+  width: 1200px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 20%);
 }
 
 .navigation {
@@ -284,6 +289,7 @@ img {
   height: 20px;
   background: #FFFFFF;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .control-radio-mark {
@@ -295,24 +301,24 @@ img {
   height: 20px;
   background: #FFFFFF;
   border-radius: 4px;
+  cursor: pointer;
 }
 
-.control-radio-mark:focus {
+.control-input:focus+.control-radio-mark {
   outline: 3px solid #83B3D3;
-  border-radius: 4px;
 }
 
 .control-mark:hover {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control-mark:focus {
-  outline: 3px solid #83B3D3;
+.control-mark:active {
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
 
-.control-mark:active {
-  background: rgba(255, 255, 255, 0.3);
+.control-input:focus+.control-mark {
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
@@ -367,6 +373,7 @@ img {
   width: 144px;
   border-radius: 2px 0 0 2px;
   border: 2px solid #ffffff;
+  border-right-width: 1px;
   background-color: transparent;
   padding: 13px 12px 8px 18px;
   color: #ffffff;
@@ -377,28 +384,43 @@ img {
   border-color: rgba(255, 255, 255, 0.6);
 }
 
-.price:focus {
-  border: 2px solid #FFFFFF;
-  box-shadow: 0 0 0 3px #81B3D2;
+.prise--start:focus {
+  border: 2px solid #ffffff;
+  box-shadow: inset 0 0 0 2px #81b3d2;
   border-radius: 4px 0 0 4px;
   outline: none;
+  border-right-width: 1px;
+  outline: 1px solid #81b3d2;
+  outline-offset: -1px;
 }
 
-.price:active {
+.prise--start:active {
   background: #756257;
-  border: 2px solid #FFFFFF;
-}
-
-.price--end:focus {
   border: 2px solid #ffffff;
-  box-shadow: 0 0 0 3px #81b3d2;
-  border-radius: 0 4px 4px 0;
-  outline: none;
+  border-right-width: 1px;
 }
 
 .price--end {
   border-radius: 0 2px 2px 0;
   padding: 13px 15px 8px 15px;
+  border-right-width: 2px;
+  border-left-width: 1px;
+}
+
+.price--end:focus {
+  border: 2px solid #ffffff;
+  box-shadow: inset 0 0 0 2px #81b3d2;
+  border-radius: 0 4px 4px 0;
+  outline: none;
+  border-left-width: 1px;
+  outline: 1px solid #81b3d2;
+  outline-offset: -1px;
+}
+
+.price--end:active {
+  background: #756257;
+  border: 2px solid #ffffff;
+  border-left-width: 1px;
 }
 
 .price[type="number"]::-webkit-outer-spin-button,
@@ -463,7 +485,7 @@ img {
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   background: #83B3D3;
   border-radius: 4px;
   padding: 15px;
@@ -730,7 +752,7 @@ img {
 
 .banner-sedona {
   height: 485px;
-  background-image: url("../images/vector.svg"),
+  background-image: url("../images/white-line.svg"),
     url("../images/arizona-state.jpg");
   background-repeat: no-repeat;
   padding: 51px;
@@ -748,6 +770,7 @@ img {
   margin: 0;
   width: 180px;
   text-align: center;
+  padding-bottom: 21px;
 }
 
 .advantages-title:nth-child(2n) {
@@ -760,7 +783,7 @@ img {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 172px;
   margin: 0;
   padding-bottom: 30px;
@@ -772,7 +795,7 @@ img {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   display: block;
   padding-bottom: 30px;
 }
@@ -782,13 +805,13 @@ img {
   line-height: 21px;
   text-align: center;
   color: #333333;
-  padding: 29px 0 30px 0;
+  padding: 7px 0 30px 0;
 }
 
 .advantages-description-item {
   font-size: 18px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 220px;
   margin: 0;
   text-align: center;
@@ -834,8 +857,9 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: flex;
   padding-top: 98px;
-  padding-bottom: 108px;
+  padding-bottom: 109px;
 }
 
 .advantages-list {
@@ -871,27 +895,59 @@ img {
   display: flex;
   margin: 0 auto;
   flex-direction: column;
-  padding-top: 85px;
-  padding-bottom: 89px;
+  padding-top: 183px;
+  padding-bottom: 88px;
   align-items: center;
+  position: relative;
+}
+
+.advantages-wrapper::after {
+  position: absolute;
+  background-image: url("../images/icon-gift.svg");
+  top: 84px;
+  width: 64px;
+  height: 76px;
+  content: "";
 }
 
 .advantages-wrapper-item {
   display: flex;
   margin: 0 auto;
   flex-direction: column;
-  padding-top: 91px;
-  padding-bottom: 89px;
   align-items: center;
+  position: relative;
+  padding-top: 183px;
+  padding-bottom: 88px;
+}
+
+.advantages-wrapper-item::after {
+  background-image: url("../images/icon-burger.svg");
+  position: absolute;
+  top: 90px;
+  width: 74px;
+  height: 72px;
+  content: "";
+  background-repeat: no-repeat;
 }
 
 .advantages-wrapper-text {
   display: flex;
   margin: 0 auto;
   flex-direction: column;
-  padding-top: 91px;
-  padding-bottom: 87px;
+  padding-top: 183px;
+  padding-bottom: 88px;
   align-items: center;
+  position: relative;
+}
+
+.advantages-wrapper-text::after {
+  background-image: url(../images/icon-house.svg);
+  position: absolute;
+  top: 88px;
+  width: 74px;
+  height: 72px;
+  content: "";
+  background-repeat: no-repeat;
 }
 
 .advantages-point-item {
@@ -984,7 +1040,7 @@ img {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 29px;
@@ -1034,7 +1090,7 @@ img {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
   padding-bottom: 44px;
 }
@@ -1094,6 +1150,8 @@ img {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0 20px 15px 0 rgb(0 0 0 / 20%);
 }
 
 
@@ -1107,7 +1165,7 @@ img {
   display: block;
   width: 361px;
   padding: 10px;
-  margin: 28px 179px 0 227px;
+  margin: 28px 179px 20px 227px;
 }
 
 .footer-contacts-address-phone:hover {
@@ -1201,15 +1259,21 @@ img {
   text-decoration: none;
 }
 
-.screen-motels-image:hover {
+.product-image {
+  object-fit: contain;
+  max-width: 100%;
+  display: block;
+}
+
+.product-image:hover {
   opacity: 0.6;
 }
 
-.screen-motels-image:focus {
+.img-link:focus>img {
   outline: 3px solid #83B3D3;
 }
 
-.screen-motels-image:active {
+.product-image:active {
   opacity: 0.3;
 }
 
@@ -1219,7 +1283,7 @@ img {
   line-height: 31px;
   color: #000000;
   margin: 0;
-  padding: 10px 0 16px 0;
+  padding: 15px 0 16px 0;
 }
 
 .screen-motels-price {
@@ -1306,7 +1370,7 @@ img {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   background-color: #83B3D3;
   border-radius: 4px;
@@ -1339,7 +1403,7 @@ img {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   background-color: #7DB54F;
   border-radius: 4px;
@@ -1370,7 +1434,7 @@ img {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   background-color: #756257;
   border-radius: 4px;
@@ -1405,7 +1469,7 @@ img {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   background: #83B3D3;
   border-radius: 4px;
   margin: auto;
