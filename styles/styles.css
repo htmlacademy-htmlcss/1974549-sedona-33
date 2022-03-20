@@ -99,21 +99,6 @@ img {
   justify-content: flex-end;
 }
 
-.navigation-user::after {
-  position: absolute;
-  top: 14px;
-  right: 178px;
-  width: 20px;
-  height: 20px;
-  background-color: #7DB54F;
-  content: "12";
-  color: #ffffff;
-  font-size: 13px;
-  text-align: center;
-  border-radius: 50%;
-  line-height: 17px;
-}
-
 .navigation-user .navigation-list {
   min-width: 42px;
   min-height: 66px;
@@ -149,28 +134,47 @@ img {
   content: "";
 }
 
+.svg-icon::after {
+  position: absolute;
+  top: 16px;
+  width: 20px;
+  height: 20px;
+  background-color: #7DB54F;
+  content: "12";
+  color: #ffffff;
+  font-size: 11px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 17px;
+}
+
 .navigation-icon-link {
   position: relative;
   padding: 24px 21px;
   color: #000000;
 }
 
-.navigation-icon:hover {
+.navigation-icon-link:hover {
   color: #756257;
 }
 
-.navigation-icon:active {
+.navigation-icon-link:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+
+.svg-icon:active:after {
   color: rgba(117, 98, 87, 0.3);
 }
 
 .navigation-link-item {
+  position: relative;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #756257;
   display: block;
   width: 160px;
@@ -196,11 +200,26 @@ img {
   margin: auto;
 }
 
+.icom-svg::after {
+  position: absolute;
+  top: 0;
+  right: 178px;
+  width: 20px;
+  height: 20px;
+  background-color: #7DB54F;
+  content: "12";
+  color: #ffffff;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 17px;
+}
+
 .catalog-wrapper {
   display: flex;
   margin-left: 73px;
-  margin-top: 44px;
-  color: #FFFFFF;
+  margin-top: 40px;
+  color: #ffffff;
   font-weight: normal;
   font-size: 18px;
   line-height: 23px;
@@ -286,7 +305,7 @@ img {
   right: 0;
   width: 20px;
   height: 20px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -298,7 +317,7 @@ img {
   right: 0;
   width: 20px;
   height: 20px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -325,7 +344,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 31px;
 }
 
@@ -334,6 +353,7 @@ img {
   background-image: url("../images/boke-catalog-canyon.jpg");
   background-repeat: no-repeat;
   margin: 0;
+  background-color: #E5E5E5;
 }
 
 .price-range {
@@ -473,8 +493,8 @@ img {
 .btn {
   display: flex;
   flex-direction: column;
-  justify-content: end;
   align-items: center;
+  margin-top: 62px;
 }
 
 .apply-button {
@@ -490,7 +510,7 @@ img {
   padding: 15px;
   border: none;
   cursor: pointer;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .apply-button:hover {
@@ -511,7 +531,7 @@ img {
   line-height: 23px;
   color: #ffffff;
   font-family: "PT Sans", sans-serif;
-  padding: 0;
+  padding: 3px;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -653,6 +673,7 @@ img {
 .logo-sedona {
   display: block;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .heading {
@@ -661,19 +682,22 @@ img {
   line-height: 68px;
   color: #ffffff;
   margin: 0;
-  padding: 39px 0 0 71px;
+  padding: 38px 0 0 71px;
 }
 
 .breadcrumbs {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .breadcrumbs-item {
   position: absolute;
   display: flex;
-  top: -4px;
+  top: -1px;
   left: 66px;
   width: 25px;
   height: 25px;
@@ -681,28 +705,39 @@ img {
   align-items: center;
 }
 
-.breadcrumbs-item:focus {
+.breadcrumbs-link {
+  padding: 0 4px 0 4px;
+}
+
+.breadcrumbs-link:hover {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:focus {
   outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
-.breadcrumbs-item:active {
+.breadcrumbs-link:active {
   opacity: 0.3;
 }
 
-.lead {
+.breadcrumbs-sub {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
-  margin: 0;
   margin-left: 111px;
+  cursor: default;
+  display: flex;
+  padding: 1px;
 }
 
-.lead::after {
+.breadcrumbs-sub::after {
   position: absolute;
   width: 6px;
   height: 6px;
-  top: 6px;
+  top: 8px;
   left: 94px;
   border-top: 2px solid #fdfdfd4a;
   border-right: 2px solid #fdfdfd4a;
@@ -711,17 +746,17 @@ img {
   content: "";
 }
 
-.lead:hover {
+.breadcrumbs-sub:hover {
   color: #ffffff;
   opacity: 0.6;
 }
 
-.lead:focus {
+.breadcrumbs-sub:focus {
   outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
-.lead:active {
+.breadcrumbs-sub:active {
   color: #ffffff;
   opacity: 0.3;
 }
@@ -750,7 +785,6 @@ img {
 }
 
 .banner-sedona {
-  height: 485px;
   background-image: url("../images/white-line.svg"),
     url("../images/arizona-state.jpg");
   background-repeat: no-repeat;
@@ -758,6 +792,7 @@ img {
   background-size: 100%;
   background-position: bottom;
   margin-bottom: 63px;
+  background-color: #E5E5E5;
 }
 
 .advantages-title {
@@ -789,7 +824,7 @@ img {
   text-align: center;
 }
 
-.advantages-namber {
+.advantages-number {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -799,7 +834,7 @@ img {
   padding-bottom: 30px;
 }
 
-.advantages-namber-item {
+.advantages-number-item {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -815,7 +850,6 @@ img {
   margin: 0;
   text-align: center;
 }
-
 
 .advantages-description {
   font-size: 18px;
@@ -869,7 +903,6 @@ img {
   grid-template-columns: repeat(3, 1fr);
 }
 
-
 .location-item {
   background-color: #83B3D3;
   display: grid;
@@ -887,7 +920,7 @@ img {
 }
 
 .advantages-item {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .advantages-wrapper {
@@ -940,7 +973,7 @@ img {
 }
 
 .advantages-wrapper-text::after {
-  background-image: url(../images/icon-house.svg);
+  background-image: url("../images/icon-house.svg");
   position: absolute;
   top: 88px;
   width: 74px;
@@ -1013,6 +1046,7 @@ img {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  background-color: #E5E5E5;
 }
 
 .newsletter-item {
@@ -1080,7 +1114,7 @@ img {
 }
 
 .field-item:invalid {
-  background: #FFFFFF;
+  background: #ffffff;
   outline: 2px solid #FF5757;
   outline-offset: -2px;
 }
@@ -1131,7 +1165,6 @@ img {
   justify-content: center;
 }
 
-
 .footer-social-link:hover {
   color: #68A2CA;
 }
@@ -1152,7 +1185,6 @@ img {
   background: #ffffff;
   box-shadow: 0 20px 15px 0 rgb(0 0 0 / 20%);
 }
-
 
 .footer-contacts-address-phone {
   font-size: 40px;
@@ -1310,13 +1342,17 @@ img {
 }
 
 .screen-motels {
-  position: relative;
   padding: 20px;
 }
 
 .product-buttons {
   display: flex;
   margin-bottom: 16px;
+}
+
+.block-rating {
+  display: flex;
+  justify-content: space-between;
 }
 
 .aside {
@@ -1326,7 +1362,6 @@ img {
   text-transform: uppercase;
   color: #333333;
   background-color: #F2F2F2;
-  margin-left: 141px;
   border-radius: 4px;
   width: 160px;
   padding: 8px;
@@ -1334,30 +1369,28 @@ img {
 }
 
 .four-stars {
-  position: absolute;
   background-image: url("../images/star.svg");
   background-repeat: space;
   width: 89px;
   height: 17px;
-  bottom: 30px;
+  margin-top: 8px;
+  margin-left: 1px;
 }
 
 .three-stars {
-  position: absolute;
   background-image: url("../images/star.svg");
   background-repeat: space;
   width: 68px;
   height: 31px;
-  bottom: 16px;
+  margin-top: 8px;
 }
 
 .two-stars {
-  position: absolute;
   background-image: url("../images/star.svg");
   background-repeat: space;
-  width: 44px;
   height: 31px;
-  bottom: 16px;
+  width: 44px;
+  margin-top: 8px;
 }
 
 .product-card-button {
@@ -1497,7 +1530,7 @@ img {
   border-right: none;
   width: 1056px;
   margin: 0 auto;
-  padding: 30px 0 30px 0;
+  padding: 25px 0 30px 0;
 }
 
 .pagination-wrapper {
@@ -1653,7 +1686,7 @@ img {
 
 .text-field:active,
 .model-field:active {
-  background: #FFFFFF;
+  background: #ffffff;
   outline: 2px solid #000000;
   box-sizing: border-box;
   border-radius: 4px;
@@ -1683,7 +1716,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 11px;
 }
 
 .form-label {
@@ -1698,7 +1732,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .input-svg {
@@ -1725,7 +1759,6 @@ img {
   position: absolute;
   left: 5px;
 }
-
 
 .field-minus:focus {
   outline: 3px solid #83B3D3;
@@ -1817,22 +1850,19 @@ img {
 }
 
 .text-model-error {
-  position: absolute;
-  margin: 0 auto;
-  right: 141px;
-  top: 54px;
+  margin: 0;
   color: #FF5757;
+  font-size: 16px;
+  line-height: 30px;
+  margin-left: 155px;
 }
 
 .text-model {
-  position: absolute;
   font-size: 16px;
-  line-height: 40px;
-  align-items: center;
+  line-height: 30px;
   color: #333333;
-  margin: 0 auto;
-  top: 44px;
-  right: 90px;
+  margin: 0;
+  margin-left: 155px;
 }
 
 .tooltip {
@@ -1890,7 +1920,7 @@ img {
 }
 
 .tooltip-text::after {
-  content: '';
+  content: "";
   background-image: url("../images/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
