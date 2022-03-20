@@ -354,6 +354,7 @@ img {
   background-repeat: no-repeat;
   margin: 0;
   background-color: #E5E5E5;
+  background-size: cover;
 }
 
 .price-range {
@@ -785,14 +786,26 @@ img {
 }
 
 .banner-sedona {
-  background-image: url("../images/white-line.svg"),
-    url("../images/arizona-state.jpg");
+  position: relative;
+  background-image: url("../images/arizona-state.jpg");
   background-repeat: no-repeat;
   padding: 51px;
-  background-size: 100%;
   background-position: bottom;
   margin-bottom: 63px;
   background-color: #E5E5E5;
+  background-size: cover;
+}
+
+.banner-sedona::after {
+  position: absolute;
+  background-image: url("../images/white-line.svg");
+  content: "";
+  width: 1200px;
+  height: 67px;
+  left: 0px;
+  bottom: -10px;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .advantages-title {
@@ -1042,11 +1055,11 @@ img {
   width: 1200px;
   min-height: 411px;
   background-image: url("../images/boke-canyon.jpg");
-  background-size: 100% auto;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   background-color: #E5E5E5;
+  background-size: cover;
 }
 
 .newsletter-item {
@@ -1131,14 +1144,14 @@ img {
 .submit-item {
   justify-content: center;
   display: flex;
-  margin: 0 auto;
+  margin-bottom: 93px;
 }
 
 .submit-wrapper {
   justify-content: center;
   display: flex;
   margin: 0 auto;
-  padding-bottom: 143px;
+  margin-bottom: 143px;
 }
 
 .footer-social-list {
