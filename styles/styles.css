@@ -353,7 +353,7 @@ img {
   background-image: url("../images/boke-catalog-canyon.jpg");
   background-repeat: no-repeat;
   margin: 0;
-  background-color: #E5E5E5;
+  background-color: #756257;
   background-size: cover;
 }
 
@@ -792,7 +792,7 @@ img {
   padding: 51px;
   background-position: bottom;
   margin-bottom: 63px;
-  background-color: #E5E5E5;
+  background-color: #756257;
   background-size: cover;
 }
 
@@ -1058,7 +1058,7 @@ img {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  background-color: #E5E5E5;
+  background-color: #756257;
   background-size: cover;
 }
 
@@ -1485,6 +1485,7 @@ img {
   padding: 8px;
   margin-right: 26px;
   border: none;
+  cursor: pointer;
 }
 
 .screen-motels-button:hover {
